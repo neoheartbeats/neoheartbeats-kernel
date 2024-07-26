@@ -1,5 +1,5 @@
 # Tukuyomi (月詠)
-Fairy tales of building AGI
+Fairy tales of building an AGI
 
 ---
 ## Roadmap
