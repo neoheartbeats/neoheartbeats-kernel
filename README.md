@@ -1,7 +1,9 @@
 # Tukuyomi (月詠)
 Fairy tales of building AGI
 
-## 01 Optimize CUDA kernels
+---
+## Roadmap
+### 01 Optimize CUDA kernels
 
 - https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/release-notes.html
 
@@ -23,11 +25,11 @@ Fairy tales of building AGI
 
 ---
 
-## 02 Enable Docker containers
+### 02 Enable Docker containers
 
 This is specifically for deployment of Qdrant.
 
-## 03 Python scripts
+### 03 Python scripts
 
 - Transformers/Unsloth for model training
 - Optimizing LLM using RAG and continuing data-generating using algorithms like DPO and alternatives like KPO
