@@ -1,0 +1,7 @@
+jupyterlab
+datasets
+
+"huggingface_hub[hf_transfer]"
+"transformers @ git+https://github.com/huggingface/transformers.git"
+"unsloth[cu121-ampere-torch230] @ git+https://github.com/unslothai/unsloth.git"
+"qdrant-client[fastembed-gpu]"
