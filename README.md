@@ -1,5 +1,12 @@
 # Tukuyomi (月詠)
-Fairy tales of building an AGI
+
+<p align="center">
+  <img width="20%" src="./images/rpcd0015_main_obj_1.png" />
+</p>
+
+Icon source: https://riparia-rec.com/release/rpcd0015/
+
+*Fairy tales of building an AGI*
 
 ---
 ## Roadmap
