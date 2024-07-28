@@ -1,0 +1,8 @@
+jupyter
+ujson
+packaging
+numpy<2
+qdrant-client==1.10.1
+sentence_transformers
+setuptools
+datasets
