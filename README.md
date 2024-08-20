@@ -16,6 +16,40 @@ Model's safetensors and training data have NOT been disclosed yet but planned to
 publishing to platforms such as HuggingFace once reliable data is collected under
 replicated evaluations.
 
+```yaml
+bf16: true
+cutoff_len: 2048
+dataset: kto-02
+dataset_dir: data
+ddp_timeout: 180000000
+do_train: true
+finetuning_type: lora
+gradient_accumulation_steps: 16
+include_num_input_tokens_seen: true
+learning_rate: 5.0e-05
+lora_alpha: 32
+lora_dropout: 0
+lora_rank: 16
+lora_target: all
+lr_scheduler_type: cosine
+max_grad_norm: 1.0
+max_samples: 3000
+model_name_or_path: /home/neoheartbeats/endpoint/models/gm2-9b-it
+num_train_epochs: 60.0
+optim: adamw_torch
+output_dir: saves/Gemma-2-9B-Chat/lora/gm-002-03
+packing: false
+per_device_train_batch_size: 4
+plot_loss: true
+pref_beta: 0.05
+pref_ftx: 0
+pref_loss: kto_pair
+stage: kto
+template: gemma
+```
+
+![training_loss](./images/training_loss.png)
+
 ## Roadmap
 ### 01 Optimize CUDA kernels
 
