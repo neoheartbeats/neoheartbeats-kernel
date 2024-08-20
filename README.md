@@ -16,6 +16,13 @@ Model's safetensors and training data have NOT been disclosed yet but planned to
 publishing to platforms such as HuggingFace once reliable data is collected under
 replicated evaluations.
 
+### Training Arguments
+
+- Training device: NVIDIA A40
+- Memory usage: up to 44GB
+- Framework used: [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
+- Base model: [google/gemma-2-9b-it](https://huggingface.co/google/gemma-2-9b-it)
+
 ```yaml
 bf16: true
 cutoff_len: 2048
