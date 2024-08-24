@@ -2,7 +2,7 @@
 
 ## Current progress
 
-sthenno-gm-04 is a fine-tuned version of DeepMind's gemma2-9b-it.
+sthenno-gm-05-05 is a fine-tuned version of DeepMind's gemma2-9b-it.
 
 This model is optimized by KTO(Kahneman-Tversky Optimization) using custom data.
 
@@ -19,21 +19,21 @@ replicated evaluations.
 ### Training Arguments
 
 - Training device: NVIDIA A40
-- Memory usage: up to 44GB
+- Memory usage: up to 46GB
 - Framework used: [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
 - Base model: [google/gemma-2-9b-it](https://huggingface.co/google/gemma-2-9b-it)
 
 ```yaml
 bf16: true
-cutoff_len: 2048
-dataset: kto-02
+cutoff_len: 1024
+dataset: kto-04
 dataset_dir: data
 ddp_timeout: 180000000
 do_train: true
 finetuning_type: lora
-gradient_accumulation_steps: 16
+gradient_accumulation_steps: 8
 include_num_input_tokens_seen: true
-learning_rate: 5.0e-05
+learning_rate: 8.0e-05
 lora_alpha: 32
 lora_dropout: 0
 lora_rank: 16
@@ -42,13 +42,13 @@ lr_scheduler_type: cosine
 max_grad_norm: 1.0
 max_samples: 3000
 model_name_or_path: /home/neoheartbeats/endpoint/models/gm2-9b-it
-num_train_epochs: 60.0
+num_train_epochs: 120.0
 optim: adamw_torch
-output_dir: saves/Gemma-2-9B-Chat/lora/gm-002-03
+output_dir: saves/Gemma-2-9B-Chat/lora/gm-005-05
 packing: false
 per_device_train_batch_size: 4
 plot_loss: true
-pref_beta: 0.05
+pref_beta: 0.06
 pref_ftx: 0
 pref_loss: kto_pair
 stage: kto
