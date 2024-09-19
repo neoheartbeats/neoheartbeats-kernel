@@ -5,3 +5,5 @@
 *.cubin
 *.fatbin
 /.DS_Store
+/.README.md.~undo-tree~
+/images/.DS_Store

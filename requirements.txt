@@ -1,0 +1,10 @@
+black[jupyter]
+jupyter
+python-dotenv
+ujson
+rich
+pydantic
+
+openai
+anthropic
+# python-telegram-bot
