@@ -18,7 +18,7 @@ def get_response_completion(message_list) -> str | None:
         top_p=0.80,
         # frequency_penalty=1.25,
         # presence_penalty=1.25,
-        max_tokens=512,
+        max_tokens=512,  # Context window is up to 16k
         n=1,
         extra_body={
             "repetition_penalty": 1.05,
