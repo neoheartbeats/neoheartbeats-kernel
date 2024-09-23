@@ -21,7 +21,6 @@ def get_response_completion(message_list) -> str | None:
         max_tokens=512,
         n=1,
         extra_body={
-            "truncate_prompt_tokens": 7939,
             "repetition_penalty": 1.05,
             # "length_penalty": 1.5,
             # "best_of": 120,
